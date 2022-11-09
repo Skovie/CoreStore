@@ -152,7 +152,8 @@ public final class SQLiteStore: LocalStorage {
      */
     public let storeOptions: [AnyHashable: Any]? = [
         NSSQLitePragmasOption: ["journal_mode": "WAL"],
-        NSBinaryStoreInsecureDecodingCompatibilityOption: true
+        NSBinaryStoreInsecureDecodingCompatibilityOption: true,
+        NSPersistentHistoryTrackingKey: true as NSNumber
     ]
     
     /**
